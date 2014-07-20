@@ -2,10 +2,8 @@ language: node_js
 node_js:
 - '0.10'
 before_script:
-  - npm install -g karma-cli
+- npm install -g karma-cli
 env:
   global:
-  - secure: RJJEYGNT5vPz6i6HRcgD2ZmpSuJ6gayamMwxLihmZNluTurhIPpufDeR9/m/iRASX9dv0SyamlOOVWWE0iRtW94P0L9vHXl1janzLg8dd4DjDy5rpK/Tvx/l3uPpw0+4DY2hgA+t2/QDVSTcDR2XTZ2w3agJNNRRw0BVHA1U76M=
-  - secure: ecoeFZic5HXwKP81PGv+EvOELsV7+qqOXl1rOaQy+jvGWMDGMET/+Fg9D3TpOLUSBSddfFiqkRvk9V8oWYDZ798ChAl2tAT/wmQgY33f65gI8W/x2s+2eIpqJngFgjXPqBn65HqPywH6XKHj76GyWMk8sZKbWb/xXA+m8Yrn2oU=
-# addons:
-#   sauce_connect: true
+  - secure: Otvgmi5xIG3GsLrAeNk1HDog9s+FUmYBQeaRjjBWxRKIuq57XBAB8LRRPcUuLQMoLm4WssmaaDh+ecD6QIk2McjqlxFQeJ5wyt1RPBQCv3GUBcLkCTZfbbCb5NFfwjl2txhY2gmTzRiwcl4lTaaTSAE+NW9Q59tN1lOaK6nTPog=
+  - secure: g0SqKATpeKiJx4R9u/v6YMZq/PNhjPILs9LtX1vvi3B0sU6jAjbLZJeWJ7LbJRj6B8/qz7l/9XmGICvBoZe7lSV65C/JFMsUIGh31KERiSmUFBcYRrHEthxF/rMLng4gyGnnj4mXLq2pNckaSoDj0qQ5fhEzY+HYns7cqhLhah4=
