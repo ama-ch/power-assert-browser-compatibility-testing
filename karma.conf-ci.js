@@ -130,7 +130,7 @@ module.exports = function(config) {
     sauceLabs: {
       testName: 'power-assert-borser-compatibility'
     },
-    captureTimeout: 5 * 60 * 1000,
+    captureTimeout: 8 * 60 * 1000,
     customLaunchers: customLaunchers,
 
 
