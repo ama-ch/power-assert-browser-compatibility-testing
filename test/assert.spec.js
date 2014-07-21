@@ -47,9 +47,10 @@ describe('assert', function() {
 
   describe('.throws()', function() {
     it('should work.', function() {
+      var pattern = new
       assert.throws(function() {
         throw new Error('Wrong value.');
-      }, /Wrong value/);
+      }, 'Wrong value.');
     });
   });
 
