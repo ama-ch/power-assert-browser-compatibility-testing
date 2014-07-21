@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '0.10'
 before_script:
-- npm install -g karma-cli
+- npm install -g grunt-cli
 env:
   global:
   - secure: Otvgmi5xIG3GsLrAeNk1HDog9s+FUmYBQeaRjjBWxRKIuq57XBAB8LRRPcUuLQMoLm4WssmaaDh+ecD6QIk2McjqlxFQeJ5wyt1RPBQCv3GUBcLkCTZfbbCb5NFfwjl2txhY2gmTzRiwcl4lTaaTSAE+NW9Q59tN1lOaK6nTPog=
