@@ -5,3 +5,21 @@ power-assert-browser-compatibility-testing
 [![Sauce Test Status](https://saucelabs.com/buildstatus/ama-ch_power-assert)](https://saucelabs.com/u/ama-ch_power-assert)
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/ama-ch_power-assert.svg)](https://saucelabs.com/u/ama-ch_power-assert)
+
+## About
+
+Browser compatibility testing of [power-assert](https://github.com/twada/power-assert).
+
+## Test environment
+
+* Using [Karma](http://karma-runner.github.io/) test runner.
+* Test framework is [Mocha](http://visionmedia.github.io/mocha/).
+* Based on [power-assert-karma-seed](https://github.com/azu/power-assert-karma-seed) and [karma-sauce-example](https://github.com/saucelabs/karma-sauce-example).
+
+## Tips
+
+To run power-assert in IE <= 8, [es5-shim](https://github.com/es-shims/es5-shim) is required.
+
+## Limitation
+
+Karma [doesn't work with IE6](https://github.com/karma-runner/karma/issues/983) at this time.
