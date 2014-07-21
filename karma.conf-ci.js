@@ -28,12 +28,14 @@ module.exports = function(config) {
       platform: 'OS X 10.9',
       version: '7'
     },
-    'SL_IE_6': {
-      base: 'SauceLabs',
-      browserName: 'internet explorer',
-      platform: 'Windows XP',
-      version: '6'
-    },
+    // Now karma doesn't work on IE6.
+    // @see https://github.com/karma-runner/karma/issues/983
+    // 'SL_IE_6': {
+    //   base: 'SauceLabs',
+    //   browserName: 'internet explorer',
+    //   platform: 'Windows XP',
+    //   version: '6'
+    // },
     'SL_IE_7': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
@@ -130,7 +132,7 @@ module.exports = function(config) {
     sauceLabs: {
       testName: 'power-assert-borser-compatibility'
     },
-    captureTimeout: 8 * 60 * 1000,
+    captureTimeout: 5 * 60 * 1000,
     customLaunchers: customLaunchers,
 
 
