@@ -61,7 +61,7 @@ describe('assert', function() {
   });
 
   describe('.fail()', function() {
-    it('should throw error.', function() {
+    it('should throw an error.', function() {
       try {
         assert.fail('actual', 'expected', 'test message');
         shouldNotCall();
