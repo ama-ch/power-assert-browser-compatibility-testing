@@ -3,6 +3,29 @@ describe('assert', function() {
     assert(true);
   });
 
+  it('should throw an error with formatted message.', function() {
+    var ary = [1,2,3], zero = 0, two = 2;
+    try {
+      assert(ary.indexOf(zero) === two);
+      shouldNotCall();
+    } catch (e) {
+      var expected = [
+        'assert(ary.indexOf(zero) === two)',
+        '       |   |       |     |   |   ',
+        '       |   |       |     |   2   ',
+        '       |   -1      0     false   ',
+        '       [1,2,3]                   ',
+        '',
+        '[number] two',
+        '=> 2',
+        '[number] ary.indexOf(zero)',
+        '=> -1',
+        ''
+      ].join('\n');
+      assert(endsWith(e.message, expected));
+    }
+  });
+
   describe('.ok()', function() {
     it('should work.', function() {
       assert.ok(1 === 1);
@@ -73,5 +96,10 @@ describe('assert', function() {
 
   function shouldNotCall() {
     throw new Error('This should not have been reached.');
+  }
+
+  function endsWith(str, suffix) {
+    var fromIndex = str.length - suffix.length;
+    return str.indexOf(suffix, fromIndex) === fromIndex;
   }
 });
