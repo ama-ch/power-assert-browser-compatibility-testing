@@ -14,7 +14,7 @@ Browser compatibility testing of [power-assert](https://github.com/twada/power-a
 ## Test environment
 
 * Using [Karma](http://karma-runner.github.io/) test runner.
-* Testing framework is [Mocha](http://visionmedia.github.io/mocha/).
+* Testing framework is [Mocha](http://mochajs.org/).
 * Based on [power-assert-karma-seed](https://github.com/azu/power-assert-karma-seed) and [karma-sauce-example](https://github.com/saucelabs/karma-sauce-example).
 
 ## Tips
